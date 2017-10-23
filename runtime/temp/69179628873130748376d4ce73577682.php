@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:71:"C:\wamp64\www\jd-shop\public/../application/index\view\index\index.html";i:1508720140;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:71:"C:\wamp64\www\jd-shop\public/../application/index\view\index\index.html";i:1508721146;}*/ ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -100,7 +100,7 @@
 										<?php if(is_array($cateres) || $cateres instanceof \think\Collection || $cateres instanceof \think\Paginator): $i = 0; $__LIST__ = $cateres;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
 										<li>
 											<div class="category-info">
-												<h3 class="category-name b-category-name"><i><img src="__STATIC__/index/images/tea.png"></i><a class="ml-22" title="<?php echo $vo['name']; ?>"><?php echo $vo['name']; ?></a></h3>
+												<h3 class="category-name b-category-name"><i><img src="__STATIC__/index/images/tea.png"></i><a class="ml-22" title="<?php echo $vo['cate_name']; ?>"><?php echo $vo['cate_name']; ?></a></h3>
 												<em>&gt;</em></div>
 											<div class="menu-item menu-in top">
 												<div class="area-in">
@@ -108,8 +108,8 @@
 														<div class="menu-srot">
 															<div class="sort-side">
 																<dl class="dl-sort">
-																	<dt><span title="<?php echo $vo['name']; ?>"><?php echo str_repeat('-',$vo['level'])?><?php echo $vo['name']; ?><span></dt>
-																	<?php if($vo['parent_id] == 1): ?>
+																	<dt><span title="<?php echo $vo['cate_name']; ?>"><?php echo str_repeat('-',$vo['level'])?><?php echo $vo['cate_name']; ?><span></dt>
+																	<?php if($vo['parent_id'] == 1): ?>
 																	列表
 																	<?php else: ?>
 																	单页
