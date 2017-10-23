@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<aside class="menu">
+		<ul>
+			<li class="person active">
+				<a href="index.html"><i class="am-icon-user"></i>个人中心</a>
+			</li>
+			<li class="person">
+				<p><i class="am-icon-newspaper-o"></i>个人资料</p>
+				<ul>
+					<li> <a href="{:url('person/information')}">个人信息</a></li>
+					<li> <a href="{:url('person/safety')}">安全设置</a></li>
+					<li> <a href="{:url('person/address')}">地址管理</a></li>
+					<li> <a href="{:url('person/cardlist')}">快捷支付</a></li>
+				</ul>
+			</li>
+			<li class="person">
+				<p><i class="am-icon-balance-scale"></i>我的交易</p>
+				<ul>
+					<li><a href="{:url('person/order')}">订单管理</a></li>
+					<li> <a href="{:url('person/change')}">退款售后</a></li>
+					<li> <a href="{:url('person/comment')}">评价商品</a></li>
+				</ul>
+			</li>
+			<li class="person">
+				<p><i class="am-icon-dollar"></i>我的资产</p>
+				<ul>
+					<li> <a href="{:url('person/points')}">我的积分</a></li>
+					<li> <a href="{:url('person/coupon')}">优惠券 </a></li>
+					<li> <a href="{:url('person/walletlist')}">账户余额</a></li>
+					<li> <a href="{:url('person/bill')}">账单明细</a></li>
+				</ul>
+			</li>
+			<li class="person">
+				<p><i class="am-icon-tags"></i>我的收藏</p>
+				<ul>
+					<li> <a href="{:url('person/collection')}">收藏</a></li>
+					<li> <a href="{:url('person/foot')}">足迹</a></li>										
+				</ul>
+			</li>
+		</ul>
+	</aside>
+</body>
+</html>

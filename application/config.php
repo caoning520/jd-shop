@@ -14,12 +14,15 @@ return [
     // | 应用设置
     // +----------------------------------------------------------------------
 
+    'APPID'                  => 'wxcc37ea8d74ce5622',
+    'APPSECRET'              =>'d4c4baa41255752a2c24af5f31878c7d',
+    'TOKEN_CATCH'            =>'token.txt',
     // 应用命名空间
     'app_namespace'          => 'app',
     // 应用调试模式
-    'app_debug'              => false,
+    'app_debug'              => true,
     // 应用Trace
-    'app_trace'              => false,
+    'app_trace'              => true,
     // 应用模式状态
     'app_status'             => '',
     // 是否支持多模块
@@ -85,7 +88,7 @@ return [
     // URL伪静态后缀
     'url_html_suffix'        => 'html',
     // URL普通方式参数 用于自动生成
-    'url_common_param'       => false,
+    'url_common_param'       => true,
     // URL参数方式 0 按名称成对解析 1 按顺序解析
     'url_param_type'         => 0,
     // 是否开启路由
@@ -140,8 +143,13 @@ return [
         'taglib_end'   => '}',
     ],
 
-    // 视图输出字符串内容替换
-    'view_replace_str'       => [],
+ 
+     // 视图输出字符串内容替换
+    'view_replace_str'       => [
+        '__STATIC__' => '/static',
+    ],
+    
+
     // 默认跳转页面对应的模板文件
     'dispatch_success_tmpl'  => THINK_PATH . 'tpl' . DS . 'dispatch_jump.tpl',
     'dispatch_error_tmpl'    => THINK_PATH . 'tpl' . DS . 'dispatch_jump.tpl',
